@@ -1,0 +1,284 @@
+.top-content{
+/*	background-image: url(../img/bg1.jpg);
+background-repeat: no-repeat;*/
+/*背景渐变色*/
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FFFFFF), to(#BCE1F0));/*谷歌*/ 
+background:-moz-linear-gradient(top,#FFFFFF,#BCE1F0);/*火狐*/
+height: 1000px;
+width: 100%;
+}
+.text-box{
+	text-align: center;
+	position: relative;
+	top: 20%;
+}
+.text-box h1{
+	font-size: 400%;
+}
+.text-box h1 a,.text-box h1 a:hover{
+	color: #85CEEC;
+	text-decoration: none;
+}
+.text-box h1,h2{
+	font-family: "Apple LiSung Light";
+	padding: 10px;
+}
+#dropdown,#dropdown:visited{
+	color: #101010;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.down-centent{
+/*	background-image: url(../img/bg2.jpg);
+background-repeat: no-repeat;*/
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#BCE1F0), to(#FFFFFF));/*谷歌*/ 
+background:-moz-linear-gradient(top,#BCE1F0,#FFFFFF);/*火狐*/ 
+/*background-color: #BCE1F0;*/
+height: 1000px;
+width: 100%;
+}
+
+.menu{
+	text-align: center;
+}
+.menu a{
+	color: #101010;
+	text-decoration: none;
+}
+.menu a:hover{
+	text-decoration: none;
+	font-size: 120%;
+}
+
+.line1{
+	position: relative;
+	left: 50%;
+	width: 2px;
+	height: 150px;
+	background-color: #F4F7FB;
+}
+.line2{
+	position: relative;
+	top: 10%;
+	left: 50%;
+	width: 2px;
+	height: 250px;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#BCE1F0), to(#FFFFFF));/*谷歌*/ 
+	background:-moz-linear-gradient(top,#BCE1F0,#FFFFFF);/*火狐*/
+}
+
+#a-text{
+	transition:all 0.8s;
+	transform:rotate(9deg);
+	-ms-transform:rotate(9deg); /* Internet Explorer */
+	-moz-transform:rotate(9deg); /* Firefox */
+	-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(9deg);  Opera 
+}
+#a-text:hover{
+	transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg); /* Internet Explorer */
+	-moz-transform:rotate(-9deg); /* Firefox */
+	-webkit-transform:rotate(-9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-9deg); /* Opera */
+}
+
+#a-picture{
+	transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg); /* Internet Explorer */
+	-moz-transform:rotate(-9deg); /* Firefox */
+	-webkit-transform:rotate(-9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-9deg); /* Opera */
+}
+#a-picture:hover{
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg); /* Internet Explorer */
+	-moz-transform:rotate(0deg); /* Firefox */
+	-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+	-o-transform:rotate(0deg); /* Opera */
+}
+
+
+/*宣墙字体特效 Manko */
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 1.2em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+.link--manko {
+	color: #B1C0B2;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	/*font-style: italic;*/
+	padding: 0.65em 0 0.8em;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.link--manko:hover {
+	color: #1e1a1b;
+}
+
+.link--manko::before,
+.link--manko::after {
+	content: '';
+	position: absolute;
+	border-width: 4px 0;
+	border-style: solid;
+	border-color: #F6BCBC;
+	pointer-events: none;
+	-webkit-transform: scale3d(0,1,1);
+	transform: scale3d(0,1,1);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.link--manko::before {
+	width: 50%;
+	left: 25%;
+	height: 80%;
+	top: 10%;
+}
+
+.link--manko::after {
+	width: 30%;
+	left: 35%;
+	height: 100%;
+	top: 0;
+}
+
+.link--manko:hover::before,
+.link--manko:hover::after {
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.link--manko span {
+	color: #E9A3BF;
+	font-weight: 400;
+	position: absolute;
+	font-size: 0.3em;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.link--manko span:first-of-type {
+	bottom: 100%;
+	margin-bottom: 15px;
+	-webkit-transform: scale3d(0.8,0.8,1) translate3d(0,10px,0);
+	transform: scale3d(0.8,0.8,1) translate3d(0,10px,0);
+}
+
+.link--manko span:last-of-type {
+	top: 100%;
+	margin-top: 10px;
+	-webkit-transform: scale3d(0.8,0.8,1) translate3d(0,-10px,0);
+	transform: scale3d(0.8,0.8,1) translate3d(0,-10px,0);
+}
+
+.link--manko:hover span {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--manko:hover span:first-of-type {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.link--manko:hover span:last-of-type {
+	-webkit-transition-delay: 0.20s;
+	transition-delay: 0.20s;
+}
+
+.center-type{
+	text-align: center;
+	padding-top: 100px; 
+}
+/*jelly*/
+#jelly{
+	background-color: #50A8D4;
+	position: relative;
+	top: 10em;
+	margin: 0 auto;
+	width: 13em;
+	height: 8em;
+	border-radius: 50% / 100% 100% 0 0;
+
+}
+#jelly-touch{
+	color: #FBF8F8;
+	text-align: center;
+	padding: 10%;
+	/*float: bottom;*/
+}
+#jelly-right-eyebrows{
+	position: relative;
+	float: right;
+    width: 0;
+    height: 0;
+    border-left: 0.8em solid transparent;
+    border-right: 3.2em solid #55585A;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid #55585A;
+    display: none;
+}
+#jelly-left-eyebrows{
+	position: relative;
+	float: left;
+	
+    width: 0;
+    height: 0;
+    border-left: 3.2em solid #55585A;
+    border-right: 0.8em solid transparent;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid #55585A;
+    display: none;
+}
+#jelly-left-eye{
+	background-color: #55585A;
+	position: relative;
+	top: 2.3em;
+	left: 20%;
+	/*margin: 0 auto;*/
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	display: none;
+}
+#jelly-right-eye{
+	background-color: #55585A;
+	position: relative;
+	top: 0.3em;
+	left: 65%;
+	/*margin: 0 auto;*/
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	display: none;
+}
+#jelly-mouth{
+	/*background-color: #55585A;*/
+	position: relative;
+	top: 0.8em;
+	margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 1.2em solid transparent;
+    border-right: 1.2em solid transparent;
+    border-bottom: 4em solid #55585A;
+    border-radius: 10%;
+    display: none;
+}
