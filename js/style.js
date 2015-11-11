@@ -62,9 +62,12 @@ $(function(){
 /*jelly动画*/
 $(document).ready(function (){
 	var count=0;
+	$('#jelly-right-eyebrows,#jelly-left-eyebrows').jrumble();
+	$('#jelly-right-eyebrows,#jelly-left-eyebrows').trigger('startRumble');
+
+
 	$("#jelly").mouseover(function(){
-		// $("#jelly-right-eyebrows,#jelly-left-eyebrows").show();
-		$("#jelly-touch").hide();
+
 		$('#jelly').jrumble({
 			x: 3,
 			y: 8,
@@ -79,16 +82,15 @@ $(document).ready(function (){
 		count+=1;
 
 		if(count == 1){
-			$("#jelly-right-eyebrows,#jelly-left-eyebrows").show();
-		}
-		if(count == 4){
-			$("#jelly-left-eye").show();
-		}
-		if(count == 6){
-			$("#jelly-right-eye").show();
-		}
-		if(count == 9){
 			$("#jelly-mouth").show();
+		}
+		// if(count == 4){
+		// 	$("#jelly-left-eye").show();
+		// }
+		// if(count == 6){
+		// 	$("#jelly-right-eye").show();
+		// }
+		if(count == 2){	
 			$('#jelly-mouth').jrumble({
 				x: 1,
 				y: 8,
@@ -100,19 +102,52 @@ $(document).ready(function (){
 			$this.trigger('startRumble');
 			demoTimeout = setTimeout(function(){$this.trigger('stopRumble');}, 250)
 		}
-		if(count == 10){
-			$('#jelly-right-eyebrows,#jelly-left-eyebrows').jrumble({
-				x: 0,
+
+		if(count == 5)count=0;
+
+	})
+})
+
+$(document).ready(function (){
+	var count=0;
+	$("#jelly").click(function(){
+
+		$('#jelly').jrumble({
+			x: 3,
+			y: 8,
+			rotation: 0
+		});
+		var demoTimeout;
+		$this = $("#jelly");
+		clearTimeout(demoTimeout);
+		$this.trigger('startRumble');
+		demoTimeout = setTimeout(function(){$this.trigger('stopRumble');}, 250)
+
+		count+=1;
+
+		if(count == 1){
+			$("#jelly-mouth").show();
+		}
+		// if(count == 4){
+		// 	$("#jelly-left-eye").show();
+		// }
+		// if(count == 6){
+		// 	$("#jelly-right-eye").show();
+		// }
+		if(count == 2){	
+			$('#jelly-mouth').jrumble({
+				x: 1,
 				y: 8,
 				rotation: 0
 			});
 			var demoTimeout;
-			$this = $("#jelly-right-eyebrows,#jelly-left-eyebrows");
+			$this = $("#jelly-mouth");
 			clearTimeout(demoTimeout);
 			$this.trigger('startRumble');
 			demoTimeout = setTimeout(function(){$this.trigger('stopRumble');}, 250)
 		}
-		if(count == 11)count=0;
+
+		if(count == 5)count=0;
 
 	})
 })
