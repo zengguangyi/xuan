@@ -5,6 +5,7 @@ body,html{
 body{
 	overflow: hidden;
 }
+
 .menu a,.text-box a,.menu a:hover,.text-box a:hover{
 	text-decoration: none;
 }
@@ -74,13 +75,21 @@ body{
 #collapseExample{
 	
 	width: 100%;
-	background-color: #F07C7C;
+	/*background-color: #F07C7C;*/
+	background-color: #FFFFFF;
+	/*谷歌*/
+	/*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#F07C7C), to(#FFFFFF)); */
+	/*火狐*/
+	/*background:-moz-linear-gradient(top,#F07C7C,#FFFFFF);*/
 }
 .menu-row{
 	padding-top: 2em;
 	padding-bottom: 1em;
 }
 /*jelly*/
+.center-type{
+	text-align: center;
+}
 #jelly{
 	z-index: 1000;
 	background-color: #50A8D4;
@@ -94,25 +103,25 @@ body{
 #jelly-right-eyebrows{
 	position: relative;
 	float: right;
-    width: 0;
-    height: 0;
-    border-left: 0.8em solid transparent;
-    border-right: 3.2em solid #55585A;
-    border-top: 1em solid transparent;
-    border-bottom: 1em solid #55585A;
-    /*display: none;*/
+	width: 0;
+	height: 0;
+	border-left: 0.8em solid transparent;
+	border-right: 3.2em solid #55585A;
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid #55585A;
+	/*display: none;*/
 }
 #jelly-left-eyebrows{
 	position: relative;
 	float: left;
 	
-    width: 0;
-    height: 0;
-    border-left: 3.2em solid #55585A;
-    border-right: 0.8em solid transparent;
-    border-top: 1em solid transparent;
-    border-bottom: 1em solid #55585A;
-    /*display: none;*/
+	width: 0;
+	height: 0;
+	border-left: 3.2em solid #55585A;
+	border-right: 0.8em solid transparent;
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid #55585A;
+	/*display: none;*/
 }
 #jelly-left-eye{
 	background-color: #55585A;
@@ -141,13 +150,13 @@ body{
 	position: relative;
 	top: 0.8em;
 	margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-left: 1.2em solid transparent;
-    border-right: 1.2em solid transparent;
-    border-bottom: 4em solid #55585A;
-    border-radius: 10%;
-    display: none;
+	width: 0;
+	height: 0;
+	border-left: 1.2em solid transparent;
+	border-right: 1.2em solid transparent;
+	border-bottom: 4em solid #55585A;
+	border-radius: 10%;
+	display: none;
 }
 
 

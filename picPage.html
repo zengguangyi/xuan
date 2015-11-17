@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宣墙 | 照片墙</title>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.5/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.5/dist/css/bootstrap-theme.min.css">
+	<script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/picstyle.css">
+
+</head>
+
+<body>
+	<div class="topContent">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="menu-bar">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+							<i class="fa fa-bars fa-2x"></i>
+						</button>
+						<a class="navbar-brand" href="index.html">Brand</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="navbar-nav">
+							<li><a class="btn" href="#" ><i class="fa fa-play-circle"></i> 视频墙</a></li>
+							<li><a class="btn" href="#"><i class="fa fa-edit"></i> 文字墙</a></li>
+							<li><a class="btn" href="picPage.html"><i class="fa fa-camera"></i> 照片墙</a></li>
+							<li class="dropdown">
+								<a href="#" class="btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th"></i>More <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div> <!--menu-bar-->
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<div class="topText">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/t1.png" class="img-responsive" id="carousel-inner-img" alt="01">
+								</div>
+								<div class="item">
+									<img src="img/t2.png" class="img-responsive" id="carousel-inner-img"  alt="02">
+								</div>	
+							</div>
+							
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div> <!--topText-->
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<div class="topThreed">
+						<h3>照片墙 <strong>|</strong> 秀 出 自 己</h3>
+						<h4><small>上传自己最美的一面</small></h4>
+						<div id="btu-menu">
+							<a class="btn">
+								上传照片
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 210 }'>
+		<div class="grid-item"><img src="img/1.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+		<div class="grid-item"><img src="img/6.jpg"></div>
+		<div class="grid-item"><img src="img/8.jpg"></div>
+		<div class="grid-item"><img src="img/1.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+		<div class="grid-item"><img src="img/6.jpg"></div>
+		<div class="grid-item"><img src="img/8.jpg"></div>
+		<div class="grid-item"><img src="img/1.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+		<div class="grid-item"><img src="img/6.jpg"></div>
+		<div class="grid-item"><img src="img/8.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+		<div class="grid-item"><img src="img/6.jpg"></div>
+		<div class="grid-item"><img src="img/8.jpg"></div>
+		<div class="grid-item"><img src="img/1.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+		<div class="grid-item"><img src="img/6.jpg"></div>
+		<div class="grid-item"><img src="img/8.jpg"></div>
+		<div class="grid-item"><img src="img/1.jpg"></div>
+		<div class="grid-item"><img src="img/3.jpg"></div>
+		<div class="grid-item"><img src="img/4.jpg"></div>
+		<div class="grid-item"><img src="img/5.jpg"></div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="social">
+					<a href="#"><i class="fa fa-github fa-2x"></i></a>
+					<a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+					<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+					<a href="#"><i class="fa fa-weixin fa-2x"></i></a>
+					<a href="#"><i class="fa fa-weibo fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<div class="social-left">
+						<ul>
+							<li><a href="#">关于我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div id="jelly">
+						<div id="jelly-left-eyebrows"></div>
+						<div id="jelly-right-eyebrows"></div>
+						<div id="jelly-left-eye"></div>
+						<div id="jelly-right-eye"></div>
+						<!-- <div id="jelly-mouth"></div> -->
+					</div>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="copyright">
+					<p>Designed and built by <a href="#">xuan</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="js/jquery.jrumble.1.3.min.js"></script> 
+	<script src="js/prettify.js"></script>
+	<script type="text/javascript" src="js/style.js"></script>
+	<script src="js/masonry.js"></script>
+</body>
+</html>
