@@ -24,6 +24,7 @@ body{
 .center-box{
 	/*background-color: #BBF1F6;*/
 	position: absolute;
+	z-index: 5000;
 	left: 50%;
 	top: 8%;
 	width: 50%;
@@ -47,6 +48,7 @@ body{
 	position: relative;
 	top: 10%;
 	padding: 3%;
+	/*visibility: hidden;*/
 	/*background-color: #F1A1A1;*/
 }
 #btu-menu{
@@ -75,8 +77,10 @@ body{
 #collapseExample{
 	
 	width: 100%;
-	/*background-color: #F07C7C;*/
-	background-color: #FFFFFF;
+	background-color: transparent;
+	/*background-color: #FFFFFF;*/
+	position: absolute;
+	z-index: 5000;
 	/*谷歌*/
 	/*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#F07C7C), to(#FFFFFF)); */
 	/*火狐*/
@@ -89,6 +93,8 @@ body{
 /*jelly*/
 .center-type{
 	text-align: center;
+
+
 }
 #jelly{
 	z-index: 1000;

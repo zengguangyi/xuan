@@ -37,19 +37,19 @@ ul{
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-#carousel-inner-img{
+#carousel-inner img{
 	display: block;
 	height: 80%;
 }
 
 .topThreed{
 	width: 100%;
-	height: 90%;
+	/*height: 90%;*/
 	/*border: 1px solid #0A600D;*/
 	margin-top: 8%;
 	margin-bottom: 5%;
 	padding-top: 10%;
-	padding-left: 20%;
+	padding-left: 15%;
 	color: #FFFFFF;
 }
 .topThreed strong{
@@ -57,6 +57,7 @@ ul{
 }
 .topThreed h4{
 	padding: 1em 0;
+	font-size: 150%;
 }
 #btu-menu{
 	padding-top: 5%;
@@ -90,22 +91,19 @@ ul{
 	text-decoration: none;
 }
 
-
-.grid{
-	/*padding: 0.6%;
-	margin: 0 auto;*/
-	width: 86%;
-	position: relative;
-	left: 28%;
-	margin-left: -16%;
+.gallery_box{
+	padding: 3em 5% 3em 5%;
 }
+/*.grid{
+	padding: 3em 5% 3em 5%;
+}*/
 .grid-item {
-	width: 200px;
-	margin-top: 10px;
+	width: 16.66666666%;
+	padding: 0.6em;
 }
-.grid-item--width2 { width: 400px; }
+
 .grid-item img {
-  max-width: 100%
+	max-width: 100%
 }
 
 footer{
@@ -128,6 +126,9 @@ footer{
 	font-size: 120%;
 	font-weight: 500;
 	text-decoration: none;
+}
+.copyright{
+	padding-top: 0.5em;
 }
 .copyright a{
 	color: #FFFFFF;

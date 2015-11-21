@@ -1,3 +1,32 @@
+/*媒体查询 width低于800px 隐藏字样*/
+$(function(){
+	var mq=window.matchMedia("(min-width: 801px)");
+	if(mq.matches){
+		// alert(window.innerWidth);
+	}else{
+		
+		$('#btu-menu').click(function(){
+			var vis=document.getElementById('LINK').style.visibility;
+			if(vis == "visible"){
+				$('.link').off().css("visibility","hidden");
+			}else{
+				$('.link').off().css("visibility","visible");
+			}
+		});
+		
+	}
+})
+
+/*媒体查询 width低于480px 调整图片width百分比*/
+$(function(){
+	var mx=window.matchMedia("(min-width: 600px)");
+	if(mx.matches){
+		// alert(window.innerWidth);
+	}else{
+		$('.grid-item').css("width","50%");	
+	}
+})
+
 /*点击#dropdown触发页面滚动 方法*/
 function click_scroll(){//得到pos这个div层的offset，包含两个值，top和left
 	var scroll_offset = $("#pos").offset(); 
@@ -151,3 +180,27 @@ $(document).ready(function (){
 
 	})
 })
+
+/*picPage页瀑布流*/
+$(function(){
+	// var $grid = $('.grid').imagesLoaded( function() {
+
+	// 	$grid.masonry({
+	// 		itemSelector: '.grid-item',
+	// 		columnWidth: '.grid-item',
+	// 		percentPosition: true
+	// 	});
+	// });
+
+var $grid = $('.grid').masonry({
+	itemSelector: '.grid-item',
+	columnWidth: '.grid-item',
+	percentPosition: true
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+	$grid.masonry('layout');
+});
+
+
+});
